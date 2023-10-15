@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color:rgb(189, 97, 97); */
+  /* width: 500px; */
+}
+
+.sudoku {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  /* width: 500px; */
+}
+
+.row-flex {
+  display: flex;
+  /* gap: 1px; */
+  background-color: rgb(51, 70, 63);
+}
+
+.sudoku-cube {
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid rgb(252, 252, 252);  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+  font-weight: bold;
+  background-color: rgb(252, 252, 252);
+}
+
+.sudoku-cube-invalid {
+  background-color: rgb(136, 131, 131);
+  color:red;
+}
+
+/* Style the buttons within .sudoku-cube */
+.sudoku-cube button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add hover effect to buttons */
+.sudoku-cube button:hover {
+  background-color: lightgray;
+}
+
+/* Add different background color for some special cubes */
+.sudoku-cube.special {
+  background-color: lightblue;
+}
+
+/* Style the clicked buttons */
+.sudoku-cube button:active {
+  background-color: yellow;
+}
